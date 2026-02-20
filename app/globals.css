@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  --color-background: #f8f9fa;
+  --color-foreground: #0f172a;
+  --color-card: #ffffff;
+  --color-card-foreground: #0f172a;
+  --color-popover: #ffffff;
+  --color-popover-foreground: #0f172a;
+  --color-primary: #0f172a;
+  --color-primary-foreground: #f8fafc;
+  --color-secondary: #f1f5f9;
+  --color-secondary-foreground: #0f172a;
+  --color-muted: #f1f5f9;
+  --color-muted-foreground: #64748b;
+  --color-accent: #f1f5f9;
+  --color-accent-foreground: #0f172a;
+  --color-destructive: #ef4444;
+  --color-destructive-foreground: #f8fafc;
+  --color-border: #e2e8f0;
+  --color-input: #e2e8f0;
+  --color-ring: #0f172a;
+  --color-chart-1: #0f172a;
+  --color-chart-2: #2563eb;
+  --color-chart-3: #10b981;
+  --color-chart-4: #f59e0b;
+  --color-chart-5: #ef4444;
+
+  --color-status-pending: #fef3c7;
+  --color-status-pending-text: #92400e;
+  --color-status-ready: #dbeafe;
+  --color-status-ready-text: #1e40af;
+  --color-status-released: #d1fae5;
+  --color-status-released-text: #065f46;
+
+  --color-role-treasury: #dbeafe;
+  --color-role-treasury-text: #1e40af;
+  --color-role-verifier: #ede9fe;
+  --color-role-verifier-text: #5b21b6;
+  --color-role-viewer: #f1f5f9;
+  --color-role-viewer-text: #475569;
+
+  --radius: 0.625rem;
+
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-jetbrains-mono);
+}
+
+* {
+  border-color: var(--color-border);
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans), system-ui, sans-serif;
+}
